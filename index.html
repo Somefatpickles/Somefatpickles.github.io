@@ -1,10 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Dustin | Data Analytics Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dustin | Data Analyst Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #111827;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      border-left: 4px solid #2563eb;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e2e8f0;
+      padding: 4px 8px;
+      margin: 4px 4px 0 0;
+      font-size: 0.8rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #0f172a;
+      color: white;
+      margin-top: 60px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome</h1>
-  <p>This is my portfolio site.</p>
+
+<header>
+  <h1>Dustin</h1>
+  <p>Data Analyst | SQL • Python • Visualization • Business Insights</p>
+  <a class="btn" href="#projects">View Projects</a>
+  <a class="btn" href="#contact">Contact Me</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#case-studies">Case Studies</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Data analyst focused on transforming raw data into actionable business insights.
+    Skilled in SQL, Python, and data visualization tools, with a strong emphasis on clear communication and decision-driven analysis.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Customer Churn Analysis</h3>
+      <p>Identified key drivers of customer churn using classification techniques.</p>
+      <div>
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Retail Sales Dashboard</h3>
+      <p>Built interactive dashboard tracking revenue trends and seasonality.</p>
+      <div>
+        <span class="tag">Tableau</span>
+        <span class="tag">Data Visualization</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Market Basket Analysis</h3>
+      <p>Discovered product associations to improve cross-selling strategy.</p>
+      <div>
+        <span class="tag">Python</span>
+        <span class="tag">Association Rules</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="case-studies">
+  <h2>Case Studies</h2>
+
+  <div class="card">
+    <h3>Revenue Decline Investigation</h3>
+    <p><strong>Problem:</strong> Identify causes of declining revenue in key regions.</p>
+    <p><strong>Approach:</strong> SQL aggregation, time-series analysis, segmentation.</p>
+    <p><strong>Insight:</strong> Decline driven primarily by two underperforming categories.</p>
+    <p><strong>Recommendation:</strong> Reallocate marketing spend and optimize inventory flow.</p>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Data Wrangling</h3>
+      <p>SQL joins, Python Pandas, data cleaning, ETL processes</p>
+    </div>
+
+    <div class="card">
+      <h3>Analysis</h3>
+      <p>Regression, hypothesis testing, cohort analysis</p>
+    </div>
+
+    <div class="card">
+      <h3>Visualization</h3>
+      <p>Tableau, Power BI, Matplotlib, storytelling dashboards</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your.email@example.com</p>
+  <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
+  <p>GitHub: https://github.com/yourusername</p>
+  <a class="btn" href="/resume.pdf">Download Resume</a>
+</section>
+
+<footer>
+  <p>© 2026 Dustin | Data Analyst Portfolio</p>
+</footer>
+
 </body>
 </html>
